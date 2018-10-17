@@ -14,11 +14,11 @@ The Machine:
 
 Modifications of Configuration.h:
 ---------------------------------
-Line  - Value
----------------------------------
-128 - BAUDRATE 115200
-136   - MOTHERBOARD BOARD_RAMPS_14_SF
-334   - TEMP_SENSOR_0 998
+- (Line) Value
+
+- (128)  BAUDRATE 115200
+- (136)  MOTHERBOARD BOARD_RAMPS_14_SF
+- (334)    TEMP_SENSOR_0 998
 578   - X_MIN_ENDSTOP_INVERTING true
 579   - Y_MIN_ENDSTOP_INVERTING true
 580   - Z_MIN_ENDSTOP_INVERTING false
