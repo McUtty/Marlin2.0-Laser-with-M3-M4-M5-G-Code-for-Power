@@ -1,4 +1,4 @@
-Thias MARLIN Version is modified and optimized for use with a LaserEngraver-CNC Machine by McUtty
+This MARLIN Version is modified and optimized for use with a LaserEngraver-CNC Machine by McUtty
 
 The Machine:
 ------------
@@ -14,41 +14,49 @@ The Machine:
 
 Modifications of Configuration.h:
 ---------------------------------
-- BAUDRATE 115200
-- MOTHERBOARD BOARD_RAMPS_14_SF
-- TEMP_SENSOR_0 998
-- X_MIN_ENDSTOP_INVERTING true
-- Y_MIN_ENDSTOP_INVERTING true
-- Z_MIN_ENDSTOP_INVERTING false
-- #define X_DRIVER_TYPE  DRV8825
-- #define Y_DRIVER_TYPE  DRV8825
-- #define Y2_DRIVER_TYPE DRV8825
-- DEFAULT_AXIS_STEPS_PER_UNIT   { 200, 200, 400, 500 }
-- DISABLE_Z true
+Line  - Value
+---------------------------------
+128   - BAUDRATE 115200
+136   - MOTHERBOARD BOARD_RAMPS_14_SF
+334   - TEMP_SENSOR_0 998
+578   - X_MIN_ENDSTOP_INVERTING true
+579   - Y_MIN_ENDSTOP_INVERTING true
+580   - Z_MIN_ENDSTOP_INVERTING false
+600   - #define X_DRIVER_TYPE  DRV8825
+601   - #define Y_DRIVER_TYPE  DRV8825
+604   - #define Y2_DRIVER_TYPE DRV8825
+657   - DEFAULT_AXIS_STEPS_PER_UNIT   { 200, 200, 400, 500 }
+889   - DISABLE_Z true
+934   - X_BED_SIZE 850
+935   - Y_BED_SIZE 850
 
 
 Modifications of Configuration_adv.h
 ------------------------------------
-- #define Y_DUAL_STEPPER_DRIVERS
-- INVERT_Y2_VS_Y_DIR false
-- #define MINIMUM_STEPPER_DIR_DELAY 650
-- #define MINIMUM_STEPPER_PULSE 2
-- #define MAXIMUM_STEPPER_RATE 250000
-- #define SPINDLE_LASER_ENABLE
-- SPINDLE_LASER_PWM_INVERT      false
-- SPINDLE_LASER_POWERUP_DELAY   1
-- SPINDLE_LASER_POWERDOWN_DELAY 1
-- #define SPEED_POWER_SLOPE      0.3922
-- #define SPEED_POWER_MIN       10
-- #define SPEED_POWER_MAX      255
-- #define CNC_COORDINATE_SYSTEMS
+Line  - Value
+------------------------------------
+323   - #define Y_DUAL_STEPPER_DRIVERS
+325   - INVERT_Y2_VS_Y_DIR false
+923   - #define MINIMUM_STEPPER_DIR_DELAY 650
+935   - #define MINIMUM_STEPPER_PULSE 2
+949   - #define MAXIMUM_STEPPER_RATE 250000
+1486  - #define SPINDLE_LASER_ENABLE
+1491  - SPINDLE_LASER_PWM_INVERT      false
+1492  - SPINDLE_LASER_POWERUP_DELAY   1
+1493  - SPINDLE_LASER_POWERDOWN_DELAY 1
+1512  - #define SPEED_POWER_SLOPE      0.3922
+1514  - #define SPEED_POWER_MIN       10
+1515  - #define SPEED_POWER_MAX      255
+1557  - #define CNC_COORDINATE_SYSTEMS
 
 
 Modifications of ../src/pins/pins_RAMPS.h
 -----------------------------------------
-- #define SPINDLE_LASER_ENABLE_PIN  4   // Pin should have a pullup/pulldown!
-- #define SPINDLE_LASER_PWM_PIN     44   // MUST BE HARDWARE PWM
-- #define SPINDLE_DIR_PIN           5
+Line  - Value
+-----------------------------------------
+311   - #define SPINDLE_LASER_ENABLE_PIN  4   // Pin should have a pullup/pulldown!
+312   - #define SPINDLE_LASER_PWM_PIN     44   // MUST BE HARDWARE PWM
+313   - #define SPINDLE_DIR_PIN           5
 
 --------------------
 End of Modifications
