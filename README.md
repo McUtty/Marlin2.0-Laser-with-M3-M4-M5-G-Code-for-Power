@@ -33,30 +33,30 @@ Modifications of Configuration.h:
 
 Modifications of Configuration_adv.h
 ------------------------------------
-Line  - Value
+(Line) Value
 ------------------------------------
-323   - #define Y_DUAL_STEPPER_DRIVERS
-325   - INVERT_Y2_VS_Y_DIR false
-923   - #define MINIMUM_STEPPER_DIR_DELAY 650
-935   - #define MINIMUM_STEPPER_PULSE 2
-949   - #define MAXIMUM_STEPPER_RATE 250000
-1486  - #define SPINDLE_LASER_ENABLE
-1491  - SPINDLE_LASER_PWM_INVERT      false
-1492  - SPINDLE_LASER_POWERUP_DELAY   1
-1493  - SPINDLE_LASER_POWERDOWN_DELAY 1
-1512  - #define SPEED_POWER_SLOPE      0.3922
-1514  - #define SPEED_POWER_MIN       10
-1515  - #define SPEED_POWER_MAX      255
-1557  - #define CNC_COORDINATE_SYSTEMS
+- (323)  #define Y_DUAL_STEPPER_DRIVERS
+- (325)  INVERT_Y2_VS_Y_DIR false
+- (923)  #define MINIMUM_STEPPER_DIR_DELAY 650
+- (935)  #define MINIMUM_STEPPER_PULSE 2
+- (949)  #define MAXIMUM_STEPPER_RATE 250000
+- (1486) #define SPINDLE_LASER_ENABLE
+- (1491) SPINDLE_LASER_PWM_INVERT      false
+- (1492) SPINDLE_LASER_POWERUP_DELAY   1
+- (1493) SPINDLE_LASER_POWERDOWN_DELAY 1
+- (1512) #define SPEED_POWER_SLOPE      0.3922
+- (1514) #define SPEED_POWER_MIN       10
+- (1515) #define SPEED_POWER_MAX      255
+- (1557) #define CNC_COORDINATE_SYSTEMS
 
 
 Modifications of ../src/pins/pins_RAMPS.h
 -----------------------------------------
-Line  - Value
+(Line) Value
 ----------------------------------------
-311   - #define SPINDLE_LASER_ENABLE_PIN  4   // Pin should have a pullup/pulldown!
-312   - #define SPINDLE_LASER_PWM_PIN     44   // MUST BE HARDWARE PWM
-313   - #define SPINDLE_DIR_PIN           5
+- (311) #define SPINDLE_LASER_ENABLE_PIN  4   // Pin should have a pullup/pulldown!
+- (312) #define SPINDLE_LASER_PWM_PIN     44   // MUST BE HARDWARE PWM
+- (313) #define SPINDLE_DIR_PIN           5
 
 --------------------
 End of Modifications
