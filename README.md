@@ -1,4 +1,4 @@
-Thias MARLIN Version is edit and optimized for use with a LaserEngraver-CNC Machine by McUtty
+Thias MARLIN Version is modified and optimized for use with a LaserEngraver-CNC Machine by McUtty
 
 The Machine:
 ------------
