@@ -12,7 +12,7 @@ The Machine:
 - Laser with an TTL LaserDriver-Modul (TTL on PIN 44)
 
 
-Modifications in Configuration.h:
+Modifications of Configuration.h:
 ---------------------------------
 - BAUDRATE 115200
 - MOTHERBOARD BOARD_RAMPS_14_SF
@@ -25,6 +25,34 @@ Modifications in Configuration.h:
 - #define Y2_DRIVER_TYPE DRV8825
 - DEFAULT_AXIS_STEPS_PER_UNIT   { 200, 200, 400, 500 }
 - DISABLE_Z true
+
+
+Modifications of Configuration_adv.h
+------------------------------------
+- #define Y_DUAL_STEPPER_DRIVERS
+- INVERT_Y2_VS_Y_DIR false
+- #define MINIMUM_STEPPER_DIR_DELAY 650
+- #define MINIMUM_STEPPER_PULSE 2
+- #define MAXIMUM_STEPPER_RATE 250000
+- #define SPINDLE_LASER_ENABLE
+- SPINDLE_LASER_PWM_INVERT      false
+- SPINDLE_LASER_POWERUP_DELAY   1
+- SPINDLE_LASER_POWERDOWN_DELAY 1
+- #define SPEED_POWER_SLOPE      0.3922
+- #define SPEED_POWER_MIN       10
+- #define SPEED_POWER_MAX      255
+- #define CNC_COORDINATE_SYSTEMS
+
+
+Modifications of ../src/pins/pins_RAMPS.h
+-----------------------------------------
+- #define SPINDLE_LASER_ENABLE_PIN  4   // Pin should have a pullup/pulldown!
+- #define SPINDLE_LASER_PWM_PIN     44   // MUST BE HARDWARE PWM
+- #define SPINDLE_DIR_PIN           5
+
+--------------------
+End of Modifications
+--------------------
 
 
 # Marlin 3D Printer Firmware
