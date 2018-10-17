@@ -16,7 +16,7 @@ Modifications of Configuration.h:
 ---------------------------------
 Line  - Value
 ---------------------------------
-128   - BAUDRATE 115200
+128 - BAUDRATE 115200
 136   - MOTHERBOARD BOARD_RAMPS_14_SF
 334   - TEMP_SENSOR_0 998
 578   - X_MIN_ENDSTOP_INVERTING true
