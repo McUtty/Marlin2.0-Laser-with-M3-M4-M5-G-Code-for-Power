@@ -1,3 +1,32 @@
+Thias MARLIN Version is edit and optimized for use with a LaserEngraver-CNC Machine by McUtty
+
+The Machine:
+------------
+- KFB2.0 Board or RAMPS 1.4
+- Baudrate 115200
+- 1 X-Axes Motor
+- 2 Y-Axes Motors
+- NO Z-Axes (but optional)
+- DRV8825 MotorDrivers
+- 850x850mm WorkingRange
+- Laser with an TTL LaserDriver-Modul (TTL on PIN 44)
+
+
+Modifications in Configuration.h:
+---------------------------------
+- BAUDRATE 115200
+- MOTHERBOARD BOARD_RAMPS_14_SF
+- TEMP_SENSOR_0 998
+- X_MIN_ENDSTOP_INVERTING true
+- Y_MIN_ENDSTOP_INVERTING true
+- Z_MIN_ENDSTOP_INVERTING false
+- #define X_DRIVER_TYPE  DRV8825
+- #define Y_DRIVER_TYPE  DRV8825
+- #define Y2_DRIVER_TYPE DRV8825
+- DEFAULT_AXIS_STEPS_PER_UNIT   { 200, 200, 400, 500 }
+- DISABLE_Z true
+
+
 # Marlin 3D Printer Firmware
 
 [![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=RCBugFix)](https://travis-ci.org/MarlinFirmware/Marlin)
